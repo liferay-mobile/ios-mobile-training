@@ -13,6 +13,7 @@
  */
 
 import UIKit
+import LiferayScreens
 
 class ViewController: UIViewController {
 
