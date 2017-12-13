@@ -107,6 +107,7 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="folderId">
                                         <integer key="value" value="34308"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="default-slideshow"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
