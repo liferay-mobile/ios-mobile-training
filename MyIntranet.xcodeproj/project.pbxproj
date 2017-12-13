@@ -14,6 +14,8 @@
 		D647505D1FE1189200BAD4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D647505C1FE1189200BAD4EA /* Assets.xcassets */; };
 		D64750601FE1189200BAD4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D647505E1FE1189200BAD4EA /* LaunchScreen.storyboard */; };
 		D64750681FE123F200BAD4EA /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = D64750671FE123F200BAD4EA /* liferay-server-context.plist */; };
+		D647506A1FE1798000BAD4EA /* LoginView_custom.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64750691FE1798000BAD4EA /* LoginView_custom.xib */; };
+		D647506C1FE17EF300BAD4EA /* default-lock-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D647506B1FE17EF300BAD4EA /* default-lock-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		D647505F1FE1189200BAD4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D64750611FE1189200BAD4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D64750671FE123F200BAD4EA /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
+		D64750691FE1798000BAD4EA /* LoginView_custom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView_custom.xib; sourceTree = "<group>"; };
+		D647506B1FE17EF300BAD4EA /* default-lock-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-lock-icon.png"; sourceTree = "<group>"; };
 		D804431106D0D0CF238C59F8 /* Pods_MyIntranet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIntranet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,9 +84,11 @@
 		D64750541FE1189200BAD4EA /* MyIntranet */ = {
 			isa = PBXGroup;
 			children = (
+				D64750691FE1798000BAD4EA /* LoginView_custom.xib */,
 				D64750551FE1189200BAD4EA /* AppDelegate.swift */,
 				D64750571FE1189200BAD4EA /* ViewController.swift */,
 				D64750591FE1189200BAD4EA /* Main.storyboard */,
+				D647506B1FE17EF300BAD4EA /* default-lock-icon.png */,
 				D647505C1FE1189200BAD4EA /* Assets.xcassets */,
 				D647505E1FE1189200BAD4EA /* LaunchScreen.storyboard */,
 				D64750611FE1189200BAD4EA /* Info.plist */,
@@ -154,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64750681FE123F200BAD4EA /* liferay-server-context.plist in Resources */,
+				D647506C1FE17EF300BAD4EA /* default-lock-icon.png in Resources */,
 				D64750601FE1189200BAD4EA /* LaunchScreen.storyboard in Resources */,
+				D647506A1FE1798000BAD4EA /* LoginView_custom.xib in Resources */,
 				D647505D1FE1189200BAD4EA /* Assets.xcassets in Resources */,
 				D647505B1FE1189200BAD4EA /* Main.storyboard in Resources */,
 			);

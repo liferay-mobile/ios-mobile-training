@@ -28,13 +28,13 @@ class ViewController: UIViewController, LoginScreenletDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        SessionContext.loadStoredCredentials()
-        
-        if (SessionContext.isLoggedIn) {
-            _ = SessionContext.currentContext?.relogin { [weak self] _ in
-                self?.performSegue(withIdentifier: "main", sender: nil)
-            }
-        }
+//        SessionContext.loadStoredCredentials()
+//        
+//        if (SessionContext.isLoggedIn) {
+//            _ = SessionContext.currentContext?.relogin { [weak self] _ in
+//                self?.performSegue(withIdentifier: "main", sender: nil)
+//            }
+//        }
     }
     
     func screenlet(_ screenlet: BaseScreenlet,

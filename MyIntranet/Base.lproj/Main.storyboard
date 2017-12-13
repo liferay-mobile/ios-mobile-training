@@ -27,6 +27,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="saveCredentials" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginMode" value="cookie"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="custom"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
