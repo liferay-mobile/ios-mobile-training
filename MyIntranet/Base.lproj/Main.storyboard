@@ -26,6 +26,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="saveCredentials" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="loginMode" value="cookie"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -39,7 +40,7 @@
                     </view>
                     <connections>
                         <outlet property="screenlet" destination="pvL-In-zGG" id="ofn-rp-TF2"/>
-                        <segue destination="3Dk-fF-A7k" kind="show" identifier="main" id="NTh-97-xla"/>
+                        <segue destination="m4e-7W-idr" kind="show" identifier="main" id="SGl-gq-uHK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -47,19 +48,74 @@
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="iQv-eu-1H3">
+        <scene sceneID="P3T-Uw-C97">
             <objects>
-                <viewController id="3Dk-fF-A7k" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qpr-N5-iyD">
+                <viewController id="7MB-PY-ioE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSg-gV-e53">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="nqJ-kO-SUG"/>
+                        <viewLayoutGuide key="safeArea" id="0Tb-y4-XkD"/>
                     </view>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="b2s-cH-XOd"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XEE-y7-lyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STz-NZ-TFH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="134"/>
+            <point key="canvasLocation" x="2073" y="440"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9ve-Hc-FXm">
+            <objects>
+                <viewController id="VU1-Uu-fqI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Mf-sm-Vhq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTX-jn-uxD" customClass="ImageGalleryScreenlet">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="repositoryId">
+                                        <integer key="value" value="20143"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="folderId">
+                                        <integer key="value" value="34308"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GTX-jn-uxD" firstAttribute="trailing" secondItem="aTH-XF-QJV" secondAttribute="trailing" id="5L9-VC-Ncv"/>
+                            <constraint firstItem="GTX-jn-uxD" firstAttribute="bottom" secondItem="aTH-XF-QJV" secondAttribute="bottom" id="Mot-k5-GRS"/>
+                            <constraint firstItem="GTX-jn-uxD" firstAttribute="top" secondItem="9Mf-sm-Vhq" secondAttribute="top" id="iSw-qm-Vgo"/>
+                            <constraint firstItem="GTX-jn-uxD" firstAttribute="leading" secondItem="aTH-XF-QJV" secondAttribute="leading" id="jn9-zw-lrp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aTH-XF-QJV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="WZ6-66-afN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Otf-vH-gOq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2072.8000000000002" y="-489.80509745127438"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="keD-jY-gCz">
+            <objects>
+                <tabBarController id="m4e-7W-idr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Q1-Ha-dXR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VU1-Uu-fqI" kind="relationship" relationship="viewControllers" id="T5l-8s-zdx"/>
+                        <segue destination="7MB-PY-ioE" kind="relationship" relationship="viewControllers" id="MD4-wq-7OW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAr-73-w7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="134"/>
         </scene>
     </scenes>
 </document>
