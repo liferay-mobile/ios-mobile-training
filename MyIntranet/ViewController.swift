@@ -25,6 +25,18 @@ class ViewController: UIViewController, LoginScreenletDelegate {
         screenlet.delegate = self
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        SessionContext.loadStoredCredentials()
+        
+        if (SessionContext.isLoggedIn) {
+            _ = SessionContext.currentContext?.relogin { [weak self] _ in
+                self?.performSegue(withIdentifier: "main", sender: nil)
+            }
+        }
+    }
+    
     func screenlet(_ screenlet: BaseScreenlet,
             onLoginError error: NSError) {
         print(error)
