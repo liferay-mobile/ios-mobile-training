@@ -15,18 +15,27 @@
 import UIKit
 import LiferayScreens
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LoginScreenletDelegate {
 
+    @IBOutlet weak var screenlet: LoginScreenlet!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        screenlet.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func screenlet(_ screenlet: BaseScreenlet,
+            onLoginError error: NSError) {
+        print(error)
     }
-
+    
+    func screenlet(_ screenlet: BaseScreenlet,
+            onLoginResponseUserAttributes attributes: [String:AnyObject]) {
+        print(attributes)
+        
+        performSegue(withIdentifier: "main", sender: nil)
+    }
 
 }
 

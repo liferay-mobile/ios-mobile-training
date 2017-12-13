@@ -34,10 +34,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="screenlet" destination="pvL-In-zGG" id="ofn-rp-TF2"/>
+                        <segue destination="3Dk-fF-A7k" kind="show" identifier="main" id="NTh-97-xla"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iQv-eu-1H3">
+            <objects>
+                <viewController id="3Dk-fF-A7k" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qpr-N5-iyD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="nqJ-kO-SUG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XEE-y7-lyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="134"/>
         </scene>
     </scenes>
 </document>
