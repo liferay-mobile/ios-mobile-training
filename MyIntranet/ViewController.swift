@@ -48,6 +48,10 @@ class ViewController: UIViewController, LoginScreenletDelegate {
         
         performSegue(withIdentifier: "main", sender: nil)
     }
+    
+    func screenlet(_ screenlet: BaseScreenlet, onCredentialsSavedUserAttributes attributes: [String : AnyObject]) {
+        print("credentials saved")
+    }
 
 }
 

@@ -16,6 +16,7 @@
 		D64750681FE123F200BAD4EA /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = D64750671FE123F200BAD4EA /* liferay-server-context.plist */; };
 		D647506A1FE1798000BAD4EA /* LoginView_custom.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64750691FE1798000BAD4EA /* LoginView_custom.xib */; };
 		D647506C1FE17EF300BAD4EA /* default-lock-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D647506B1FE17EF300BAD4EA /* default-lock-icon.png */; };
+		D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		D64750671FE123F200BAD4EA /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		D64750691FE1798000BAD4EA /* LoginView_custom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView_custom.xib; sourceTree = "<group>"; };
 		D647506B1FE17EF300BAD4EA /* default-lock-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-lock-icon.png"; sourceTree = "<group>"; };
+		D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView_custom.swift; sourceTree = "<group>"; };
 		D804431106D0D0CF238C59F8 /* Pods_MyIntranet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIntranet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				D647505E1FE1189200BAD4EA /* LaunchScreen.storyboard */,
 				D64750611FE1189200BAD4EA /* Info.plist */,
 				D64750671FE123F200BAD4EA /* liferay-server-context.plist */,
+				D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */,
 			);
 			path = MyIntranet;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */,
 				D64750581FE1189200BAD4EA /* ViewController.swift in Sources */,
 				D64750561FE1189200BAD4EA /* AppDelegate.swift in Sources */,
 			);
