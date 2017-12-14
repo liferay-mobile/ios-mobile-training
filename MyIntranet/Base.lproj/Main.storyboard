@@ -19,23 +19,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvL-In-zGG" customClass="LoginScreenlet">
-                                <rect key="frame" x="20" y="129" width="335" height="409"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="409" id="Jfa-09-JFC"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="saveCredentials" value="YES"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="loginMode" value="cookie"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="custom"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="demo"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pvL-In-zGG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hRo-eb-19Z"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pvL-In-zGG" secondAttribute="trailing" constant="20" id="tEf-3c-VBf"/>
-                            <constraint firstItem="pvL-In-zGG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z2p-xW-4rJ"/>
+                            <constraint firstItem="pvL-In-zGG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7Dt-WP-2Wg"/>
+                            <constraint firstItem="pvL-In-zGG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BLa-jW-lJi"/>
+                            <constraint firstItem="pvL-In-zGG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c6m-aK-IUY"/>
+                            <constraint firstItem="pvL-In-zGG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="r3t-5X-k7J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

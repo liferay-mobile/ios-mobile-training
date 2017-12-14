@@ -2,6 +2,7 @@ target 'MyIntranet' do
     use_frameworks!
     inhibit_all_warnings!
     pod 'LiferayScreens'
+    pod 'LiferayScreensThemeDemo', :git => 'https://github.com/jmnavarro/liferay-screens-themes', :branch => 'master'
 end
 
 post_install do |installer|
