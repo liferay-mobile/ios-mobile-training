@@ -16,6 +16,7 @@
 		D64750681FE123F200BAD4EA /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = D64750671FE123F200BAD4EA /* liferay-server-context.plist */; };
 		D647506A1FE1798000BAD4EA /* LoginView_custom.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64750691FE1798000BAD4EA /* LoginView_custom.xib */; };
 		D647506C1FE17EF300BAD4EA /* default-lock-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D647506B1FE17EF300BAD4EA /* default-lock-icon.png */; };
+		D6B6C0421FE3B08E00B283FB /* GetUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */; };
 		D6B6C0441FE3B14B00B283FB /* GetUserConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */; };
 		D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */; };
 /* End PBXBuildFile section */
@@ -33,6 +34,7 @@
 		D64750671FE123F200BAD4EA /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		D64750691FE1798000BAD4EA /* LoginView_custom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView_custom.xib; sourceTree = "<group>"; };
 		D647506B1FE17EF300BAD4EA /* default-lock-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-lock-icon.png"; sourceTree = "<group>"; };
+		D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInteractor.swift; sourceTree = "<group>"; };
 		D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserConnector.swift; sourceTree = "<group>"; };
 		D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView_custom.swift; sourceTree = "<group>"; };
 		D804431106D0D0CF238C59F8 /* Pods_MyIntranet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIntranet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +108,7 @@
 		D6B6C03A1FE3AA4000B283FB /* UserProfile */ = {
 			isa = PBXGroup;
 			children = (
+				D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */,
 				D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */,
 			);
 			path = UserProfile;
@@ -282,6 +285,7 @@
 				D6B6C0441FE3B14B00B283FB /* GetUserConnector.swift in Sources */,
 				D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */,
 				D64750581FE1189200BAD4EA /* ViewController.swift in Sources */,
+				D6B6C0421FE3B08E00B283FB /* GetUserInteractor.swift in Sources */,
 				D64750561FE1189200BAD4EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
