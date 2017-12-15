@@ -89,6 +89,41 @@
             <point key="canvasLocation" x="2072.8000000000002" y="439.43028485757122"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="onP-rh-UGL">
+            <objects>
+                <viewController id="zRH-B0-Lbd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XHO-gp-oUl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZb-GS-04M" customClass="UserProfileScreenlet" customModule="MyIntranet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="283"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="283" id="Knt-xe-pdw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="userId">
+                                        <integer key="value" value="45519"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BZb-GS-04M" firstAttribute="top" secondItem="XHO-gp-oUl" secondAttribute="top" id="ZeA-5N-kPh"/>
+                            <constraint firstItem="SSk-9A-2aO" firstAttribute="trailing" secondItem="BZb-GS-04M" secondAttribute="trailing" id="aqd-aa-rNa"/>
+                            <constraint firstItem="BZb-GS-04M" firstAttribute="leading" secondItem="SSk-9A-2aO" secondAttribute="leading" id="y0N-MD-yOM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SSk-9A-2aO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="recents" id="KKa-F7-0ys"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X67-fX-Btf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061.5999999999999" y="1154.5727136431785"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="9ve-Hc-FXm">
             <objects>
                 <viewController id="VU1-Uu-fqI" sceneMemberID="viewController">
@@ -137,6 +172,7 @@
                     <connections>
                         <segue destination="VU1-Uu-fqI" kind="relationship" relationship="viewControllers" id="T5l-8s-zdx"/>
                         <segue destination="7MB-PY-ioE" kind="relationship" relationship="viewControllers" id="MD4-wq-7OW"/>
+                        <segue destination="zRH-B0-Lbd" kind="relationship" relationship="viewControllers" id="u1q-xl-0cE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAr-73-w7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
