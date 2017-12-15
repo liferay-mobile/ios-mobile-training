@@ -21,6 +21,14 @@ class UserProfileView_default: BaseScreenletView, UserProfileViewModel {
     @IBOutlet weak var fullNameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
+    override var progressMessages: [String : ProgressMessages] {
+        return [
+            BaseScreenlet.DefaultAction: [
+                .working: "Loading user profile",
+                .failure: "error",
+            ]
+        ]
+    }
     
     var fullName: String {
         get {
@@ -48,4 +56,25 @@ class UserProfileView_default: BaseScreenletView, UserProfileViewModel {
             emailLabel.text = newValue
         }
     }
+    
+    override func onStartInteraction() {
+        super.onStartInteraction()
+        
+        userPortrait.isHidden = true
+        fullNameLabel.isHidden = true
+        emailLabel.isHidden = true
+    }
+    
+    override func onFinishInteraction(_ result: AnyObject?, error: NSError?) {
+        super.onFinishInteraction(result, error: error)
+        
+        userPortrait.isHidden = false
+        fullNameLabel.isHidden = false
+        emailLabel.isHidden = false
+    }
+    
+    override func createProgressPresenter() -> ProgressPresenter {
+        return CustomProgressPresenter()
+    }
+
 }
