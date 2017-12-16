@@ -22,6 +22,7 @@
 		D6B6C0421FE3B08E00B283FB /* GetUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */; };
 		D6B6C0441FE3B14B00B283FB /* GetUserConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */; };
 		D6B6C0461FE3B82F00B283FB /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0451FE3B82F00B283FB /* UserProfileViewModel.swift */; };
+		D6BCC3621FE58B1300466DC4 /* SyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCC3611FE58B1300466DC4 /* SyncViewController.swift */; };
 		D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInteractor.swift; sourceTree = "<group>"; };
 		D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserConnector.swift; sourceTree = "<group>"; };
 		D6B6C0451FE3B82F00B283FB /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		D6BCC3611FE58B1300466DC4 /* SyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncViewController.swift; sourceTree = "<group>"; };
 		D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView_custom.swift; sourceTree = "<group>"; };
 		D804431106D0D0CF238C59F8 /* Pods_MyIntranet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyIntranet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 				D64750611FE1189200BAD4EA /* Info.plist */,
 				D64750671FE123F200BAD4EA /* liferay-server-context.plist */,
 				D6E18B771FE292A100BF8E63 /* LoginView_custom.swift */,
+				D6BCC3611FE58B1300466DC4 /* SyncViewController.swift */,
 			);
 			path = MyIntranet;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */,
 				D64750581FE1189200BAD4EA /* ViewController.swift in Sources */,
 				D6B6C03C1FE3AA8400B283FB /* UserProfileScreenlet.swift in Sources */,
+				D6BCC3621FE58B1300466DC4 /* SyncViewController.swift in Sources */,
 				D6B6C0401FE3AC9500B283FB /* UserProfileView_default.swift in Sources */,
 				D6B6C0421FE3B08E00B283FB /* GetUserInteractor.swift in Sources */,
 				D64750561FE1189200BAD4EA /* AppDelegate.swift in Sources */,
