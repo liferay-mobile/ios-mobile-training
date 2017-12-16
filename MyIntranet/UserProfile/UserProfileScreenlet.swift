@@ -15,12 +15,13 @@
 import Foundation
 import LiferayScreens
 
-
-class UserProfileScreenlet : BaseScreenlet {
+class UserProfileScreenlet: BaseScreenlet {
     
     @IBInspectable open var userId: Int64 = 0
     
     @IBInspectable open var autoLoad: Bool = true
+    
+    @IBInspectable open var offlinePolicy: String? = CacheStrategyType.remoteFirst.rawValue
     
     var viewModel: UserProfileViewModel! {
         return screenletView as! UserProfileViewModel
@@ -28,6 +29,8 @@ class UserProfileScreenlet : BaseScreenlet {
     
     override func createInteractor(name: String, sender: AnyObject?) -> Interactor? {
         let interactor = GetUserInteractor(screenlet: self, userId: userId)
+        
+        interactor.cacheStrategy = CacheStrategyType(rawValue: self.offlinePolicy ?? "") ?? .remoteFirst
         
         interactor.onSuccess = {
             guard let user = interactor.resultUser else { return }

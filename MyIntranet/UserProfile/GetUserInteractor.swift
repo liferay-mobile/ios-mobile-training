@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class GetUserInteractor: ServerConnectorInteractor {
+class GetUserInteractor: ServerReadConnectorInteractor {
     
     let userId: Int64
     
@@ -37,4 +37,35 @@ class GetUserInteractor: ServerConnectorInteractor {
     override func createConnector() -> ServerConnector? {
         return GetUserConnector(userId: userId)
     }
+    
+    override func readFromCache(_ c: ServerConnector, result: @escaping (AnyObject?) -> Void) {
+        guard let cacheManager = SessionContext.currentContext?.cacheManager,
+            let c = c as? GetUserConnector else {
+            result(nil)
+            return
+        }
+        let key = "\(userId)"
+        let collection = ScreenletName(type(of: screenlet!))
+        
+        cacheManager.getAny(collection: collection, key: key) { user in
+            c.resultUser = user as? User
+            
+            result(user)
+        }
+    }
+    
+    override func writeToCache(_ c: ServerConnector) {
+        guard let cacheManager = SessionContext.currentContext?.cacheManager,
+            let c = c as? GetUserConnector else {
+                return
+        }
+        let key = "\(userId)"
+        let collection = ScreenletName(type(of: screenlet!))
+        
+        let user = c.resultUser
+        
+        cacheManager.setClean(collection: collection, key: key, value: user!, attributes: [:])
+    }
+    
+    
 }
