@@ -17,6 +17,8 @@
 		D647506A1FE1798000BAD4EA /* LoginView_custom.xib in Resources */ = {isa = PBXBuildFile; fileRef = D64750691FE1798000BAD4EA /* LoginView_custom.xib */; };
 		D647506C1FE17EF300BAD4EA /* default-lock-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D647506B1FE17EF300BAD4EA /* default-lock-icon.png */; };
 		D6B6C03C1FE3AA8400B283FB /* UserProfileScreenlet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C03B1FE3AA8400B283FB /* UserProfileScreenlet.swift */; };
+		D6B6C03E1FE3ABC600B283FB /* UserProfileView_default.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B6C03D1FE3ABC600B283FB /* UserProfileView_default.xib */; };
+		D6B6C0401FE3AC9500B283FB /* UserProfileView_default.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C03F1FE3AC9500B283FB /* UserProfileView_default.swift */; };
 		D6B6C0421FE3B08E00B283FB /* GetUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */; };
 		D6B6C0441FE3B14B00B283FB /* GetUserConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */; };
 		D6B6C0461FE3B82F00B283FB /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B6C0451FE3B82F00B283FB /* UserProfileViewModel.swift */; };
@@ -37,6 +39,8 @@
 		D64750691FE1798000BAD4EA /* LoginView_custom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView_custom.xib; sourceTree = "<group>"; };
 		D647506B1FE17EF300BAD4EA /* default-lock-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-lock-icon.png"; sourceTree = "<group>"; };
 		D6B6C03B1FE3AA8400B283FB /* UserProfileScreenlet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileScreenlet.swift; sourceTree = "<group>"; };
+		D6B6C03D1FE3ABC600B283FB /* UserProfileView_default.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileView_default.xib; sourceTree = "<group>"; };
+		D6B6C03F1FE3AC9500B283FB /* UserProfileView_default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView_default.swift; sourceTree = "<group>"; };
 		D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserInteractor.swift; sourceTree = "<group>"; };
 		D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserConnector.swift; sourceTree = "<group>"; };
 		D6B6C0451FE3B82F00B283FB /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				D6B6C03B1FE3AA8400B283FB /* UserProfileScreenlet.swift */,
+				D6B6C03D1FE3ABC600B283FB /* UserProfileView_default.xib */,
+				D6B6C03F1FE3AC9500B283FB /* UserProfileView_default.swift */,
 				D6B6C0411FE3B08E00B283FB /* GetUserInteractor.swift */,
 				D6B6C0431FE3B14B00B283FB /* GetUserConnector.swift */,
 				D6B6C0451FE3B82F00B283FB /* UserProfileViewModel.swift */,
@@ -184,6 +190,7 @@
 			files = (
 				D64750681FE123F200BAD4EA /* liferay-server-context.plist in Resources */,
 				D647506C1FE17EF300BAD4EA /* default-lock-icon.png in Resources */,
+				D6B6C03E1FE3ABC600B283FB /* UserProfileView_default.xib in Resources */,
 				D64750601FE1189200BAD4EA /* LaunchScreen.storyboard in Resources */,
 				D647506A1FE1798000BAD4EA /* LoginView_custom.xib in Resources */,
 				D647505D1FE1189200BAD4EA /* Assets.xcassets in Resources */,
@@ -293,6 +300,7 @@
 				D6E18B781FE292A100BF8E63 /* LoginView_custom.swift in Sources */,
 				D64750581FE1189200BAD4EA /* ViewController.swift in Sources */,
 				D6B6C03C1FE3AA8400B283FB /* UserProfileScreenlet.swift in Sources */,
+				D6B6C0401FE3AC9500B283FB /* UserProfileView_default.swift in Sources */,
 				D6B6C0421FE3B08E00B283FB /* GetUserInteractor.swift in Sources */,
 				D64750561FE1189200BAD4EA /* AppDelegate.swift in Sources */,
 			);
